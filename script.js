@@ -1,4 +1,4 @@
-const changeQuote = document.querySelector('.click');
+const changeQuote = document.querySelector('.dice');
 
 function afficheQuote() {
     const iD = document.querySelector('.quote-id');
@@ -9,15 +9,14 @@ function afficheQuote() {
         return (response.json())
     })
     .then((data) => { 
-        console.log(data); 
-    
         const idAdvice = data.slip;
         const advice = data.slip;
     
-        iD.textContent = `Advice # ${idAdvice.id}`;
-        quote.textContent = `" ${advice.advice} "`;
+        iD.textContent = `Advice # ${ idAdvice.id }`;
+        quote.textContent = `" ${ advice.advice } "`;
     });
 };
+
 afficheQuote();
 
 changeQuote.addEventListener('click', afficheQuote);
