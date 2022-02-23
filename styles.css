@@ -22,7 +22,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 img{
@@ -92,7 +92,7 @@ img{
 @media screen and (max-width: 700px){
 
   .box {
-    width: 400px;
+    width: 150px;
   }
 
   .divider-desk {
