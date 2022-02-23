@@ -12,7 +12,7 @@ function afficheQuote() {
         const idAdvice = data.slip;
         const advice = data.slip;
     
-        iD.textContent = `Advice # ${ idAdvice.id }`;
+        iD.textContent = `Advice #${idAdvice.id}`;
         quote.textContent = `" ${ advice.advice } "`;
     });
 };

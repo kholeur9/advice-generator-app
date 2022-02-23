@@ -14,39 +14,55 @@
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: "Manrope", sans-serif;
   background-color: var(--Dark-Grayish-Blue);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+img{
+  width: 100%;
 }
 
 .box {
-  position: relative;
-  margin: 200px auto;
-  width: 550px;
+  position: absolute;
+  max-width: 550px;
+  min-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--Grayish-Blue);
   border-radius: 12px;
-  padding: 40px;
+  padding: 2.3rem;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .quote-id {
-  margin-bottom: 20px;
-  font-size: 11px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  letter-spacing: 5px;
   color: var(--Neon-Green);
   font-weight: 100;
   text-transform: uppercase;
 }
 
 .box .quote {
+  margin: 20px 0;
   font-size: 28px;
   color: var(--Light-Cyan);
 }
 
 .divider-desk {
-  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.divider-mobile {
+  display: none;
 }
 
 .btn-change {
@@ -54,6 +70,8 @@ body {
   bottom: 0;
   transform: translateY(50%);
   padding: 0.8rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--Neon-Green);
   cursor: pointer;
@@ -69,4 +87,19 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 700px){
+
+  .box {
+    width: 400px;
+  }
+
+  .divider-desk {
+    display: none;
+  }
+  .divider-mobile {
+    display: block;
+    margin-bottom: 15px;
+  }
 }
